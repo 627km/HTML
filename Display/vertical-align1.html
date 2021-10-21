@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baseline</title>
+        <meta charset="utf-8">
+        <style>
+            .container {
+                background-color: orange;
+            }
+            .alex {
+                font-size: 90px;
+                background-color: pink;
+                vertical-align: top;
+                /* alex에 vertical-align: top 을 해주면 
+                alex를 제외한 가장 높은 것은 chris이므로 alex와 chris가 맞춰져야 하므로 chris가 올라와서 맟줘지게 된다.
+                그 후 ben은 chris의 baseline과 맞춰져야 하므로 올라온다. 
+                */
+            }
+            .ben {
+                font-size: 30px;
+                background-color: lime;
+                /* vertical-align: top; ben이 담겨있는 박스의 위가 가장높은 박스의 위에 맞춰지게 됨 */
+            }
+            .chris {
+                font-size: 60px;
+                background-color: yellow;
+            }
+
+            /* baseline은 vertical-align의 조건들을 충족시키면서 줄의 높이를 최소화시키는 곳에 위치한다. */
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <span class="alex">alex</span>
+            <span class="ben">ben</span>
+            <span class="chris">chris</span>
+        </div>
+    </body>
+</html>

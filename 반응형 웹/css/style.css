@@ -1,0 +1,15 @@
+h1 {
+    font-size: 2px;
+}
+p {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 24px;
+    }
+}
